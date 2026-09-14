@@ -1,0 +1,260 @@
+.services-page {
+    width: 100%;
+    min-height: 100vh;
+
+    background: #f8f7f4;
+    color: #1d1d1d;
+
+    overflow-x: hidden;
+}
+
+
+/* =========================================
+   SERVICES HERO
+========================================= */
+
+.services-hero {
+    width: 100%;
+    min-height: 400px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 60px 7%;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(150, 122, 80, 0.10),
+            transparent 55%
+        ),
+        #f8f7f4;
+}
+
+
+.services-hero-content {
+    width: 100%;
+    max-width: 850px;
+
+    margin: 0 auto;
+}
+
+
+.services-hero-content p {
+    margin: 0 0 15px;
+
+    color: #967a50;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    letter-spacing: 4px;
+}
+
+
+.services-hero-content h1 {
+    margin: 0 0 18px;
+
+    color: #1d1d1d;
+
+    font-size: 58px;
+    font-weight: 700;
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+}
+
+
+.services-hero-content span {
+    display: block;
+
+    color: #666;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   SERVICES LIST
+========================================= */
+
+.services-list {
+    width: 100%;
+
+    padding: 75px 7% 100px;
+
+    background: #f8f7f4;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.services-heading {
+    width: 100%;
+
+    margin: 0 auto 45px;
+
+    text-align: center;
+}
+
+
+.services-heading p {
+    margin: 0 0 8px;
+
+    color: #967a50;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    letter-spacing: 4px;
+}
+
+
+.services-heading h2 {
+    margin: 0;
+
+    color: #1d1d1d;
+
+    font-size: 42px;
+    font-weight: 700;
+
+    line-height: 1.15;
+
+    letter-spacing: -1px;
+}
+
+
+/* Small gold line */
+
+.services-heading::after {
+    content: "";
+
+    display: block;
+
+    width: 42px;
+    height: 3px;
+
+    margin: 15px auto 0;
+
+    background: #967a50;
+
+    border-radius: 20px;
+}
+
+
+/* =========================================
+   SAME SERVICE CARDS AS HOME
+========================================= */
+
+.services-list .services-grid {
+    width: 100%;
+    max-width: 1250px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1100px) {
+
+    .services-list {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .services-list .services-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+}
+
+
+/* =========================================
+   SMALL TABLET
+========================================= */
+
+@media (max-width: 850px) {
+
+    .services-hero {
+        min-height: 350px;
+    }
+
+    .services-hero-content h1 {
+        font-size: 48px;
+    }
+
+    .services-list .services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .services-hero {
+        min-height: 300px;
+
+        padding: 50px 20px;
+    }
+
+    .services-hero-content p {
+        font-size: 10px;
+
+        letter-spacing: 3px;
+    }
+
+    .services-hero-content h1 {
+        font-size: 38px;
+
+        letter-spacing: -1px;
+    }
+
+    .services-hero-content span {
+        font-size: 14px;
+    }
+
+
+    .services-list {
+        padding: 60px 20px 75px;
+    }
+
+
+    .services-heading {
+        margin-bottom: 35px;
+    }
+
+
+    .services-heading h2 {
+        font-size: 32px;
+    }
+
+
+    .services-list .services-grid {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+}

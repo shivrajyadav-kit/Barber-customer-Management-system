@@ -1,0 +1,2130 @@
+/* =========================================================
+   GLOBAL RESET
+========================================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  max-width: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  scroll-behavior: smooth;
+
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+
+  min-height: 100vh;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  background: #f8f7f4;
+  color: #1d1d1d;
+
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+
+  min-height: 100vh;
+
+  overflow-x: hidden;
+}
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+main {
+  width: 100%;
+  max-width: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  overflow-x: hidden;
+}
+
+
+/* =========================================================
+   SERVICES SECTION
+   Soft Gray Premium Background
+========================================================= */
+
+.services-section {
+  position: relative;
+
+  width: 100%;
+  max-width: 100%;
+
+  /*
+    Increased top and bottom spacing
+    for better separation
+  */
+  padding: 105px 7% 120px;
+
+  /*
+    Soft gray background
+  */
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(150, 122, 80, 0.12),
+      transparent 42%
+    ),
+    linear-gradient(
+      180deg,
+      rgb(18, 0, 18) 10%,
+      #db952b 50%,
+      rgb(18, 0, 18) 100%
+    );
+
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   SERVICES DECORATIVE BACKGROUND
+========================================================= */
+
+.services-section::before {
+  content: "";
+
+  position: absolute;
+
+  width: 280px;
+  height: 280px;
+
+  top: 25px;
+  left: -160px;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(150, 122, 80, 0.16);
+
+  pointer-events: none;
+}
+
+.services-section::after {
+  content: "";
+
+  position: absolute;
+
+  width: 210px;
+  height: 210px;
+
+  right: -115px;
+  bottom: 30px;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(150, 122, 80, 0.16);
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.section-heading {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  margin: 0 auto 50px;
+}
+
+.section-heading p {
+  margin: 0 0 9px;
+
+  color: #db952b;
+
+  font-size: 18px;
+  font-weight: 800;
+
+  letter-spacing: 4px;
+  line-height: 1.5;
+
+  text-transform: uppercase;
+}
+
+.section-heading h2 {
+  margin: 0;
+
+  color: #fcfafa;
+
+  font-size: 44px;
+  font-weight: 700;
+
+  line-height: 1.15;
+
+  letter-spacing: -1.5px;
+}
+
+
+/* =========================================================
+   GOLD LINE
+========================================================= */
+
+.section-heading::after {
+  content: "";
+
+  width: 45px;
+  height: 3px;
+
+  margin-top: 17px;
+
+  background: #e38f11;
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 3px 10px rgba(150, 122, 80, 0.25);
+}
+
+
+/* =========================================================
+   SERVICES GRID
+========================================================= */
+
+.services-grid {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  max-width: 1450px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 24px;
+
+  padding: 5px 0 10px;
+
+  overflow: visible;
+}
+
+
+/* =========================================================
+   SERVICE CARDS
+========================================================= */
+
+.services-grid > * {
+  position: relative;
+
+  width: 100%;
+  max-width: 100%;
+
+  min-width: 0;
+
+  overflow: hidden;
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 10px 28px rgba(0, 0, 0, 0.11);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+
+/* =========================================================
+   SERVICE CARD HOVER
+========================================================= */
+
+@media (hover: hover) {
+
+  .services-grid > *:hover {
+    transform: translateY(-9px);
+
+    box-shadow:
+      0 20px 40px rgba(0, 0, 0, 0.16);
+  }
+}
+
+
+/* =========================================================
+   SERVICE IMAGES
+========================================================= */
+
+.services-grid > * img {
+  display: block;
+
+  width: 100%;
+  max-width: 100%;
+
+  height: auto;
+
+  object-fit: cover;
+}
+
+
+/* =========================================================
+   ABOUT SECTION
+========================================================= */
+
+.home-about {
+  position: relative;
+
+  width: 90%;
+  max-width: 1200px;
+
+  margin: 90px auto;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(0, 1fr);
+
+  align-items: center;
+
+  gap: 80px;
+}
+
+
+/* =========================================================
+   ABOUT IMAGE
+========================================================= */
+
+.about-image-box {
+  position: relative;
+
+  width: 100%;
+  height: 520px;
+
+  animation:
+    aboutImageReveal 0.9s ease both;
+}
+
+
+/* =========================================================
+   ABOUT IMAGE DECORATIVE FRAME
+========================================================= */
+
+.about-image-box::before {
+  content: "";
+
+  position: absolute;
+
+  top: -17px;
+  left: -17px;
+
+  width: 100%;
+  height: 100%;
+
+  border: 1px solid #967a50;
+
+  border-radius: 3px;
+
+  opacity: 0.6;
+
+  z-index: 0;
+
+  transition:
+    transform 0.5s ease,
+    opacity 0.5s ease;
+}
+
+
+.about-image-box::after {
+  content: "";
+
+  position: absolute;
+
+  right: -10px;
+  top: 30px;
+
+  width: 70px;
+  height: 70px;
+
+  background:
+    radial-gradient(
+      circle,
+      #967a50 2px,
+      transparent 2px
+    );
+
+  background-size: 12px 12px;
+
+  opacity: 0.25;
+
+  z-index: 0;
+}
+
+
+/* =========================================================
+   ABOUT MAIN IMAGE
+========================================================= */
+
+.about-image-box img {
+  position: relative;
+
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  border-radius: 4px;
+
+  z-index: 1;
+
+  background:
+    linear-gradient(
+      135deg,
+      #292929,
+      #967a50
+    );
+
+  filter: grayscale(12%);
+
+  transition:
+    transform 0.7s ease,
+    filter 0.7s ease;
+}
+
+
+/* =========================================================
+   ABOUT IMAGE HOVER
+========================================================= */
+
+@media (hover: hover) {
+
+  .about-image-box:hover img {
+    transform: translate(-7px, -7px);
+
+    filter: grayscale(0%);
+  }
+
+  .about-image-box:hover::before {
+    transform: translate(7px, 7px);
+
+    opacity: 0.9;
+  }
+}
+
+
+/* =========================================================
+   EXPERIENCE CIRCLE
+========================================================= */
+
+.experience-circle {
+  position: absolute;
+
+  right: -30px;
+  bottom: 30px;
+
+  width: 150px;
+  height: 150px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  background:
+    linear-gradient(
+      145deg,
+      #242424,
+      #111111
+    );
+
+  color: #fff;
+
+  border: 5px solid #f8f7f4;
+
+  border-radius: 50%;
+
+  z-index: 4;
+
+  box-shadow:
+    0 18px 40px rgba(0, 0, 0, 0.25);
+
+  animation:
+    floatingCircle 4s ease-in-out infinite;
+}
+
+
+.experience-circle::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 5px;
+
+  border: 1px solid rgba(150, 122, 80, 0.6);
+
+  border-radius: 50%;
+}
+
+
+.experience-circle strong {
+  position: relative;
+
+  font-size: 38px;
+
+  line-height: 1;
+
+  color: #fff;
+}
+
+
+.experience-circle span {
+  position: relative;
+
+  width: 80px;
+
+  margin-top: 8px;
+
+  color: #cfcfcf;
+
+  font-size: 10px;
+
+  line-height: 1.4;
+
+  text-align: center;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.5px;
+}
+
+
+/* =========================================================
+   ABOUT CONTENT
+========================================================= */
+
+.about-content {
+  min-width: 0;
+
+  animation:
+    aboutContentReveal 0.9s ease both;
+}
+
+
+.small-title {
+  margin: 0 0 14px;
+
+  color: #967a50;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 4px;
+
+  text-transform: uppercase;
+}
+
+
+.about-content h2 {
+  margin: 0 0 25px;
+
+  color: #181818;
+
+  font-size: clamp(38px, 4.2vw, 58px);
+
+  line-height: 1.04;
+
+  letter-spacing: -2.5px;
+}
+
+
+.about-content h2 span {
+  color: #967a50;
+}
+
+
+.about-description {
+  max-width: 540px;
+
+  margin: 0 0 15px;
+
+  color: #686868;
+
+  font-size: 15px;
+
+  line-height: 1.85;
+}
+
+
+/* =========================================================
+   ABOUT STATS
+========================================================= */
+
+.about-stats {
+  display: flex;
+
+  align-items: center;
+
+  gap: 0;
+
+  margin: 35px 0;
+}
+
+
+.about-stats div {
+  min-width: 105px;
+
+  padding-right: 25px;
+
+  margin-right: 25px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+
+  border-right: 1px solid #ddd;
+}
+
+
+.about-stats div:last-child {
+  border-right: none;
+
+  margin-right: 0;
+
+  padding-right: 0;
+}
+
+
+.about-stats strong {
+  color: #1c1c1c;
+
+  font-size: 27px;
+
+  line-height: 1;
+}
+
+
+.about-stats span {
+  color: #888;
+
+  font-size: 10px;
+
+  white-space: nowrap;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.5px;
+}
+
+
+/* =========================================================
+   ABOUT BUTTON
+========================================================= */
+
+.about-button {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 13px;
+
+  padding: 14px 21px;
+
+  background: #1c1c1c;
+
+  color: #fff;
+
+  border: 1px solid #1c1c1c;
+
+  border-radius: 5px;
+
+  text-decoration: none;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+.about-button span {
+  font-size: 18px;
+
+  line-height: 1;
+
+  transition:
+    transform 0.3s ease;
+}
+
+
+@media (hover: hover) {
+
+  .about-button:hover {
+    background: transparent;
+
+    color: #1c1c1c;
+
+    transform: translateY(-2px);
+  }
+
+  .about-button:hover span {
+    transform: translateX(6px);
+  }
+}
+
+
+/* =========================================================
+   WHY US SECTION
+========================================================= */
+
+.why-us {
+  position: relative;
+
+  width: 90%;
+  max-width: 1200px;
+
+  margin: 0 auto 130px;
+
+  padding: 20px 0;
+}
+
+
+/* =========================================================
+   WHY HEADING
+========================================================= */
+
+.why-heading {
+  max-width: 720px;
+
+  margin: 0 auto 55px;
+
+  text-align: center;
+}
+
+
+.why-heading > p {
+  margin: 0 0 13px;
+
+  color: #967a50;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 4px;
+
+  text-transform: uppercase;
+}
+
+
+.why-heading h2 {
+  margin: 0 0 18px;
+
+  color: #181818;
+
+  font-size: clamp(35px, 4vw, 51px);
+
+  line-height: 1.08;
+
+  letter-spacing: -1.8px;
+}
+
+
+.why-heading h2 span {
+  color: #967a50;
+}
+
+
+.why-description {
+  display: block;
+
+  max-width: 600px;
+
+  margin: 0 auto;
+
+  color: #777;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   WHY GRID
+========================================================= */
+
+.why-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 18px;
+}
+
+
+/* =========================================================
+   WHY CARD
+========================================================= */
+
+.why-card {
+  position: relative;
+
+  min-width: 0;
+  min-height: 270px;
+
+  padding: 32px 25px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #f4f2ed
+    );
+
+  border: 1px solid #e6e2db;
+
+  border-radius: 8px;
+
+  overflow: hidden;
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+
+/* =========================================================
+   GOLD TOP ANIMATION
+========================================================= */
+
+.why-card::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  width: 0;
+  height: 3px;
+
+  background: #967a50;
+
+  transition:
+    width 0.45s ease;
+}
+
+
+/* =========================================================
+   BACKGROUND NUMBER
+========================================================= */
+
+.why-card::after {
+  content: "";
+
+  position: absolute;
+
+  right: -15px;
+  bottom: -28px;
+
+  color: rgba(150, 122, 80, 0.05);
+
+  font-size: 120px;
+
+  font-weight: 900;
+
+  line-height: 1;
+
+  pointer-events: none;
+}
+
+
+.why-card:nth-child(1)::after {
+  content: "01";
+}
+
+.why-card:nth-child(2)::after {
+  content: "02";
+}
+
+.why-card:nth-child(3)::after {
+  content: "03";
+}
+
+.why-card:nth-child(4)::after {
+  content: "04";
+}
+
+
+/* =========================================================
+   WHY CARD HOVER
+========================================================= */
+
+@media (hover: hover) {
+
+  .why-card:hover {
+    transform: translateY(-10px);
+
+    border-color: rgba(150, 122, 80, 0.4);
+
+    box-shadow:
+      0 22px 45px rgba(0, 0, 0, 0.11);
+  }
+
+  .why-card:hover::before {
+    width: 100%;
+  }
+}
+
+
+/* =========================================================
+   WHY ICON
+========================================================= */
+
+.why-icon {
+  position: relative;
+  z-index: 2;
+
+  width: 54px;
+  height: 54px;
+
+  margin-bottom: 25px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #1c1c1c;
+
+  color: #fff;
+
+  border-radius: 50%;
+
+  font-size: 21px;
+
+  box-shadow:
+    0 8px 18px rgba(0, 0, 0, 0.15);
+
+  transition:
+    transform 0.4s ease,
+    background 0.3s ease;
+}
+
+
+@media (hover: hover) {
+
+  .why-card:hover .why-icon {
+    transform:
+      rotate(8deg)
+      scale(1.08);
+
+    background: #967a50;
+  }
+}
+
+
+/* =========================================================
+   WHY TEXT
+========================================================= */
+
+.why-card h3 {
+  position: relative;
+  z-index: 2;
+
+  margin: 0 0 12px;
+
+  color: #1c1c1c;
+
+  font-size: 18px;
+
+  line-height: 1.3;
+}
+
+
+.why-card p {
+  position: relative;
+  z-index: 2;
+
+  margin: 0;
+
+  color: #777;
+
+  font-size: 13px;
+
+  line-height: 1.75;
+}
+
+
+/* =========================================================
+   CTA SECTION
+========================================================= */
+
+.home-cta {
+  position: relative;
+
+  width: 90%;
+  max-width: 1200px;
+
+  min-height: 470px;
+
+  margin: 0 auto 130px;
+
+  display: flex;
+
+  align-items: center;
+
+  overflow: hidden;
+
+  border-radius: 10px;
+
+  background: #222;
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.16);
+}
+
+
+/* =========================================================
+   CTA IMAGE
+========================================================= */
+
+.home-cta > img {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  z-index: 0;
+
+  background:
+    linear-gradient(
+      135deg,
+      #222,
+      #967a50
+    );
+
+  transition:
+    transform 1.2s ease;
+}
+
+
+@media (hover: hover) {
+
+  .home-cta:hover > img {
+    transform: scale(1.06);
+  }
+}
+
+
+/* =========================================================
+   CTA OVERLAY
+========================================================= */
+
+.cta-dark {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 1;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.94) 0%,
+      rgba(0, 0, 0, 0.82) 38%,
+      rgba(0, 0, 0, 0.50) 72%,
+      rgba(0, 0, 0, 0.25) 100%
+    );
+}
+
+
+/* =========================================================
+   CTA DECORATION
+========================================================= */
+
+.home-cta::before {
+  content: "";
+
+  position: absolute;
+
+  right: 50px;
+  top: 50px;
+
+  width: 130px;
+  height: 130px;
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  border-radius: 50%;
+
+  z-index: 2;
+
+  pointer-events: none;
+}
+
+
+.home-cta::after {
+  content: "";
+
+  position: absolute;
+
+  right: 80px;
+  top: 80px;
+
+  width: 70px;
+  height: 70px;
+
+  border: 1px solid rgba(150, 122, 80, 0.6);
+
+  border-radius: 50%;
+
+  z-index: 2;
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   CTA CONTENT
+========================================================= */
+
+.cta-content {
+  position: relative;
+
+  z-index: 3;
+
+  width: 100%;
+
+  max-width: 700px;
+
+  padding: 70px;
+}
+
+
+.cta-content > p {
+  margin: 0 0 15px;
+
+  color: #c7b18c;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 4px;
+
+  text-transform: uppercase;
+}
+
+
+.cta-content h2 {
+  margin: 0 0 22px;
+
+  color: #fff;
+
+  font-size: clamp(40px, 5vw, 65px);
+
+  line-height: 1;
+
+  letter-spacing: -2.5px;
+}
+
+
+.cta-content h2 span {
+  color: #c7b18c;
+}
+
+
+.cta-content > span {
+  display: block;
+
+  max-width: 500px;
+
+  margin-bottom: 32px;
+
+  color: #dedede;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   CTA BUTTON
+========================================================= */
+
+.cta-button {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 15px;
+
+  padding: 15px 23px;
+
+  background: #fff;
+
+  color: #1c1c1c;
+
+  border: 1px solid #fff;
+
+  border-radius: 5px;
+
+  text-decoration: none;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+.cta-button span {
+  font-size: 19px;
+
+  line-height: 1;
+
+  transition:
+    transform 0.3s ease;
+}
+
+
+@media (hover: hover) {
+
+  .cta-button:hover {
+    background: transparent;
+
+    color: #fff;
+
+    transform: translateY(-2px);
+  }
+
+  .cta-button:hover span {
+    transform: translateX(7px);
+  }
+}
+
+
+/* =========================================================
+   ANIMATIONS
+========================================================= */
+
+@keyframes aboutImageReveal {
+
+  from {
+    opacity: 0;
+
+    transform: translateX(-45px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateX(0);
+  }
+}
+
+
+@keyframes aboutContentReveal {
+
+  from {
+    opacity: 0;
+
+    transform: translateX(45px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateX(0);
+  }
+}
+
+
+@keyframes floatingCircle {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  /* SERVICES */
+
+  .services-section {
+    padding: 95px 5% 110px;
+  }
+
+
+  .services-grid {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+
+    gap: 20px;
+  }
+
+
+  /* ABOUT */
+
+  .home-about {
+    gap: 55px;
+  }
+
+
+  /* WHY */
+
+  .why-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  /* =====================================================
+     SERVICES
+  ===================================================== */
+
+  .services-section {
+    padding: 80px 30px 95px;
+  }
+
+
+  .section-heading {
+    margin-bottom: 42px;
+  }
+
+
+  .section-heading h2 {
+    font-size: 38px;
+  }
+
+
+  .services-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 18px;
+  }
+
+
+  /* =====================================================
+     ABOUT
+  ===================================================== */
+
+  .home-about {
+    width: 88%;
+
+    margin: 90px auto;
+
+    grid-template-columns:
+      minmax(0, 1fr);
+
+    gap: 65px;
+  }
+
+
+  .about-image-box {
+    height: 480px;
+
+    max-width: 700px;
+
+    margin: 0 auto;
+  }
+
+
+  .about-content {
+    max-width: 700px;
+
+    margin: 0 auto;
+  }
+
+
+  /* =====================================================
+     WHY
+  ===================================================== */
+
+  .why-us {
+    width: 88%;
+
+    margin-bottom: 100px;
+  }
+
+
+  /* =====================================================
+     CTA
+  ===================================================== */
+
+  .home-cta {
+    width: 88%;
+
+    min-height: 430px;
+
+    margin-bottom: 100px;
+  }
+
+
+  .cta-content {
+    padding: 55px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  /* =====================================================
+     SERVICES
+  ===================================================== */
+
+  .services-section {
+    width: 100%;
+
+    padding: 70px 16px 85px;
+  }
+
+
+  .section-heading {
+    margin-bottom: 35px;
+  }
+
+
+  .section-heading p {
+    font-size: 9px;
+
+    letter-spacing: 2.8px;
+  }
+
+
+  .section-heading h2 {
+    font-size: 31px;
+
+    letter-spacing: -0.7px;
+  }
+
+
+  .section-heading::after {
+    width: 33px;
+
+    margin-top: 13px;
+  }
+
+
+  .services-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+      minmax(0, 1fr);
+
+    gap: 20px;
+
+    padding: 0;
+  }
+
+
+  .services-grid > * {
+    width: 100%;
+
+    min-width: 0;
+  }
+
+
+  /* =====================================================
+     ABOUT
+  ===================================================== */
+
+  .home-about {
+    width: 90%;
+
+    margin: 75px auto;
+
+    display: grid;
+
+    grid-template-columns:
+      minmax(0, 1fr);
+
+    gap: 55px;
+  }
+
+
+  .about-image-box {
+    width: calc(100% - 12px);
+
+    height: 390px;
+
+    margin-left: 12px;
+  }
+
+
+  .about-image-box::before {
+    top: -12px;
+
+    left: -12px;
+  }
+
+
+  .about-image-box::after {
+    right: -7px;
+
+    width: 55px;
+    height: 55px;
+
+    background-size: 10px 10px;
+  }
+
+
+  .experience-circle {
+    right: -17px;
+
+    bottom: 18px;
+
+    width: 120px;
+    height: 120px;
+
+    border-width: 4px;
+  }
+
+
+  .experience-circle strong {
+    font-size: 30px;
+  }
+
+
+  .experience-circle span {
+    width: 70px;
+
+    font-size: 8px;
+  }
+
+
+  .about-content {
+    width: 100%;
+  }
+
+
+  .small-title {
+    font-size: 9px;
+
+    letter-spacing: 3px;
+  }
+
+
+  .about-content h2 {
+    margin-bottom: 20px;
+
+    font-size: 38px;
+
+    letter-spacing: -1.5px;
+  }
+
+
+  .about-description {
+    font-size: 14px;
+
+    line-height: 1.75;
+  }
+
+
+  /* =====================================================
+     ABOUT STATS
+  ===================================================== */
+
+  .about-stats {
+    width: 100%;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 0;
+
+    margin: 30px 0;
+  }
+
+
+  .about-stats div {
+    min-width: 0;
+
+    flex: 1;
+
+    padding-right: 12px;
+
+    margin-right: 12px;
+  }
+
+
+  .about-stats strong {
+    font-size: 21px;
+  }
+
+
+  .about-stats span {
+    font-size: 8px;
+
+    white-space: normal;
+
+    line-height: 1.3;
+  }
+
+
+  .about-button {
+    width: 100%;
+
+    min-height: 48px;
+  }
+
+
+  /* =====================================================
+     WHY US
+  ===================================================== */
+
+  .why-us {
+    width: 90%;
+
+    margin: 0 auto 85px;
+
+    padding: 0;
+  }
+
+
+  .why-heading {
+    margin-bottom: 35px;
+  }
+
+
+  .why-heading > p {
+    font-size: 9px;
+
+    letter-spacing: 3px;
+  }
+
+
+  .why-heading h2 {
+    font-size: 34px;
+
+    letter-spacing: -1px;
+  }
+
+
+  .why-description {
+    font-size: 13px;
+
+    line-height: 1.7;
+  }
+
+
+  .why-grid {
+    display: grid;
+
+    grid-template-columns:
+      minmax(0, 1fr);
+
+    gap: 14px;
+  }
+
+
+  .why-card {
+    min-height: 0;
+
+    padding: 27px 22px;
+
+    border-radius: 7px;
+  }
+
+
+  .why-icon {
+    width: 48px;
+    height: 48px;
+
+    margin-bottom: 19px;
+
+    font-size: 19px;
+  }
+
+
+  .why-card h3 {
+    font-size: 17px;
+  }
+
+
+  .why-card p {
+    font-size: 13px;
+
+    line-height: 1.7;
+  }
+
+
+  /* =====================================================
+     CTA
+  ===================================================== */
+
+  .home-cta {
+    width: 90%;
+
+    min-height: 500px;
+
+    margin: 0 auto 85px;
+
+    align-items: flex-end;
+
+    border-radius: 8px;
+  }
+
+
+  .cta-dark {
+    background:
+      linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.96) 0%,
+        rgba(0, 0, 0, 0.80) 52%,
+        rgba(0, 0, 0, 0.30) 100%
+      );
+  }
+
+
+  .home-cta::before {
+    right: 15px;
+
+    top: 20px;
+
+    width: 90px;
+    height: 90px;
+  }
+
+
+  .home-cta::after {
+    right: 38px;
+
+    top: 43px;
+
+    width: 45px;
+    height: 45px;
+  }
+
+
+  .cta-content {
+    width: 100%;
+
+    max-width: none;
+
+    padding: 35px 25px;
+  }
+
+
+  .cta-content > p {
+    font-size: 9px;
+
+    letter-spacing: 2.5px;
+  }
+
+
+  .cta-content h2 {
+    margin-bottom: 18px;
+
+    font-size: 43px;
+
+    letter-spacing: -1.5px;
+  }
+
+
+  .cta-content > span {
+    margin-bottom: 25px;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+  }
+
+
+  .cta-button {
+    width: 100%;
+
+    min-height: 48px;
+  }
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 400px) {
+
+  /* SERVICES */
+
+  .services-section {
+    padding-top: 65px;
+    padding-bottom: 80px;
+
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+
+  .section-heading h2 {
+    font-size: 28px;
+  }
+
+
+  .section-heading p {
+    font-size: 8px;
+
+    letter-spacing: 2.2px;
+  }
+
+
+  .services-grid {
+    gap: 18px;
+  }
+
+
+  /* ABOUT */
+
+  .home-about {
+    width: 92%;
+
+    margin: 70px auto;
+  }
+
+
+  .about-image-box {
+    height: 330px;
+
+    margin-left: 8px;
+
+    width: calc(100% - 8px);
+  }
+
+
+  .experience-circle {
+    right: -12px;
+
+    bottom: 15px;
+
+    width: 105px;
+    height: 105px;
+  }
+
+
+  .experience-circle strong {
+    font-size: 27px;
+  }
+
+
+  .experience-circle span {
+    width: 62px;
+
+    font-size: 7px;
+  }
+
+
+  .about-content h2 {
+    font-size: 32px;
+
+    letter-spacing: -1px;
+  }
+
+
+  .about-description {
+    font-size: 13px;
+  }
+
+
+  .about-stats div {
+    padding-right: 8px;
+
+    margin-right: 8px;
+  }
+
+
+  .about-stats strong {
+    font-size: 19px;
+  }
+
+
+  .about-stats span {
+    font-size: 7px;
+  }
+
+
+  /* WHY */
+
+  .why-us {
+    width: 92%;
+  }
+
+
+  .why-heading h2 {
+    font-size: 30px;
+  }
+
+
+  .why-description {
+    font-size: 12px;
+  }
+
+
+  .why-card {
+    padding: 24px 20px;
+  }
+
+
+  /* CTA */
+
+  .home-cta {
+    width: 92%;
+
+    min-height: 460px;
+  }
+
+
+  .cta-content {
+    padding: 28px 20px;
+  }
+
+
+  .cta-content h2 {
+    font-size: 37px;
+  }
+
+
+  .cta-content > span {
+    font-size: 12px;
+  }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+========================================================= */
+
+@media (max-width: 320px) {
+
+  /* SERVICES */
+
+  .services-section {
+    padding-top: 60px;
+    padding-bottom: 75px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+
+  .section-heading h2 {
+    font-size: 25px;
+  }
+
+
+  /* ABOUT */
+
+  .home-about {
+    width: 94%;
+  }
+
+
+  .about-image-box {
+    height: 290px;
+  }
+
+
+  .experience-circle {
+    width: 90px;
+    height: 90px;
+  }
+
+
+  .experience-circle strong {
+    font-size: 23px;
+  }
+
+
+  .experience-circle span {
+    width: 55px;
+
+    font-size: 6px;
+  }
+
+
+  .about-content h2 {
+    font-size: 29px;
+  }
+
+
+  .about-stats strong {
+    font-size: 17px;
+  }
+
+
+  /* WHY */
+
+  .why-us {
+    width: 94%;
+  }
+
+
+  .why-heading h2 {
+    font-size: 27px;
+  }
+
+
+  .why-card h3 {
+    font-size: 16px;
+  }
+
+
+  .why-card p {
+    font-size: 12px;
+  }
+
+
+  /* CTA */
+
+  .home-cta {
+    width: 94%;
+
+    min-height: 430px;
+  }
+
+
+  .cta-content h2 {
+    font-size: 33px;
+  }
+}
+
+
+/* =========================================================
+   TOUCH DEVICES
+========================================================= */
+
+@media (hover: none) {
+
+  .services-grid > *:hover {
+    transform: none;
+
+    box-shadow:
+      0 10px 28px rgba(0, 0, 0, 0.11);
+  }
+
+
+  .why-card:hover {
+    transform: none;
+
+    box-shadow: none;
+  }
+
+
+  .about-image-box:hover img {
+    transform: none;
+  }
+
+
+  .about-button:hover,
+  .cta-button:hover {
+    transform: none;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  html {
+    scroll-behavior: auto;
+  }
+
+
+  .about-image-box,
+  .about-content,
+  .experience-circle {
+    animation: none;
+  }
+
+
+  .services-grid > *,
+  .why-card,
+  .why-icon,
+  .about-image-box img,
+  .about-image-box::before,
+  .about-button,
+  .cta-button,
+  .home-cta > img {
+    transition: none;
+  }
+}

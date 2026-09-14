@@ -1,0 +1,866 @@
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+.experience-page {
+  width: 100%;
+  background: #0b0b0b;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.experience-page * {
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   ABOUT / OUR STORY
+========================================================= */
+
+.home-about {
+  width: 100%;
+  max-width: 1300px;
+
+  margin: 0 auto;
+  padding: 110px 40px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 90px;
+
+  align-items: center;
+}
+
+
+/* IMAGE */
+
+.about-image-box {
+  position: relative;
+
+  width: 100%;
+  height: 600px;
+
+  overflow: visible;
+}
+
+.about-image-box::before {
+  content: "";
+
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  top: 20px;
+  left: -20px;
+
+  border: 1px solid #c9a227;
+
+  z-index: 0;
+}
+
+.about-image-box img {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  z-index: 1;
+
+  filter: brightness(0.9);
+}
+
+
+/* EXPERIENCE CIRCLE */
+
+.experience-circle {
+  position: absolute;
+
+  width: 155px;
+  height: 155px;
+
+  right: -55px;
+  bottom: 45px;
+
+  background: #c9a227;
+
+  color: #111;
+
+  border-radius: 50%;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  z-index: 3;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.45);
+}
+
+.experience-circle strong {
+  font-size: 42px;
+  font-weight: 800;
+
+  line-height: 1;
+}
+
+.experience-circle span {
+  font-size: 12px;
+
+  margin-top: 8px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   ABOUT CONTENT
+========================================================= */
+
+.about-content {
+  padding-left: 20px;
+}
+
+.small-title {
+  color: #c9a227;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+}
+
+.about-content h2 {
+  margin: 0 0 25px;
+
+  font-size: clamp(42px, 5vw, 68px);
+
+  line-height: 1.05;
+
+  font-weight: 700;
+
+  color: #ffffff;
+}
+
+.about-content h2 span {
+  color: #c9a227;
+}
+
+.about-description {
+  color: #a9a9a9;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+
+  margin-bottom: 18px;
+
+  max-width: 580px;
+}
+
+
+/* =========================================================
+   STATS
+========================================================= */
+
+.about-stats {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+
+  margin: 40px 0;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+
+  border-left: 2px solid #c9a227;
+
+  padding-left: 15px;
+}
+
+.stat-item strong {
+  color: #ffffff;
+
+  font-size: 30px;
+
+  line-height: 1;
+
+  margin-bottom: 8px;
+}
+
+.stat-item span {
+  color: #888;
+
+  font-size: 12px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   ABOUT BUTTON
+========================================================= */
+
+.about-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  padding: 15px 25px;
+
+  background: #c9a227;
+
+  color: #111;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+
+  transition: all 0.3s ease;
+}
+
+.about-button span {
+  font-size: 20px;
+
+  transition: transform 0.3s ease;
+}
+
+.about-button:hover {
+  background: #ffffff;
+
+  color: #111;
+}
+
+.about-button:hover span {
+  transform: translateX(6px);
+}
+
+
+/* =========================================================
+   WHY US
+========================================================= */
+
+.why-us {
+  width: 100%;
+
+  padding: 110px 40px;
+
+  background: #111111;
+}
+
+
+/* HEADING */
+
+.why-heading {
+  max-width: 750px;
+
+  margin: 0 auto 65px;
+
+  text-align: center;
+}
+
+.why-heading h2 {
+  margin: 0 0 20px;
+
+  font-size: clamp(40px, 5vw, 64px);
+
+  line-height: 1.05;
+
+  font-weight: 700;
+}
+
+.why-heading h2 span {
+  color: #c9a227;
+}
+
+.why-description {
+  display: block;
+
+  max-width: 650px;
+
+  margin: auto;
+
+  color: #999;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   WHY GRID
+========================================================= */
+
+.why-grid {
+  width: 100%;
+  max-width: 1300px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 22px;
+}
+
+
+/* =========================================================
+   WHY CARD
+========================================================= */
+
+.why-card {
+  position: relative;
+
+  overflow: hidden;
+
+  background: #191919;
+
+  border: 1px solid rgba(255, 255, 255, 0.06);
+
+  border-radius: 4px;
+
+  padding-bottom: 35px;
+
+  transition:
+    transform 0.4s ease,
+    border-color 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-10px);
+
+  border-color: rgba(201, 162, 39, 0.6);
+
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+
+/* CARD IMAGE */
+
+.why-image {
+  width: 100%;
+  height: 230px;
+
+  overflow: hidden;
+
+  position: relative;
+}
+
+.why-image::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background: linear-gradient(
+    to bottom,
+    transparent 45%,
+    rgba(0, 0, 0, 0.65)
+  );
+}
+
+.why-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition:
+    transform 0.6s ease,
+    filter 0.6s ease;
+}
+
+.why-card:hover .why-image img {
+  transform: scale(1.08);
+
+  filter: brightness(1.1);
+}
+
+
+/* =========================================================
+   WHY ICON
+========================================================= */
+
+.why-icon {
+  width: 58px;
+  height: 58px;
+
+  margin: -29px auto 22px;
+
+  position: relative;
+
+  z-index: 3;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #c9a227;
+
+  color: #111;
+
+  border-radius: 50%;
+
+  font-size: 23px;
+
+  box-shadow:
+    0 5px 20px rgba(0, 0, 0, 0.4);
+
+  transition:
+    transform 0.4s ease,
+    background 0.4s ease;
+}
+
+.why-card:hover .why-icon {
+  transform: rotate(8deg) scale(1.08);
+
+  background: #ffffff;
+}
+
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.why-card-content {
+  padding: 0 25px;
+
+  text-align: center;
+}
+
+.why-card h3 {
+  margin: 0 0 13px;
+
+  font-size: 21px;
+
+  color: #ffffff;
+
+  font-weight: 700;
+}
+
+.why-card p {
+  margin: 0;
+
+  color: #888;
+
+  font-size: 14px;
+
+  line-height: 1.75;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.home-cta {
+  position: relative;
+
+  width: 100%;
+
+  min-height: 600px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+
+/* CTA IMAGE */
+
+.home-cta > img {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  z-index: 0;
+}
+
+
+/* DARK OVERLAY */
+
+.cta-dark {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.75)
+    );
+
+  z-index: 1;
+}
+
+
+/* CTA CONTENT */
+
+.cta-content {
+  position: relative;
+
+  z-index: 2;
+
+  width: 100%;
+
+  max-width: 800px;
+
+  padding: 80px 30px;
+
+  text-align: center;
+}
+
+.cta-content > p:first-child {
+  color: #c9a227;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  margin-bottom: 20px;
+}
+
+.cta-content h2 {
+  margin: 0 0 20px;
+
+  color: #ffffff;
+
+  font-size: clamp(44px, 6vw, 76px);
+
+  line-height: 1.05;
+
+  font-weight: 700;
+}
+
+.cta-content h2 span {
+  color: #c9a227;
+}
+
+.cta-description {
+  max-width: 550px;
+
+  margin: 0 auto 35px;
+
+  color: #d0d0d0;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   CTA BUTTON
+========================================================= */
+
+.cta-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  padding: 17px 30px;
+
+  background: #c9a227;
+
+  color: #111;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+
+  transition: all 0.3s ease;
+}
+
+.cta-button span {
+  font-size: 21px;
+
+  transition: transform 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #ffffff;
+
+  color: #111;
+}
+
+.cta-button:hover span {
+  transform: translateX(7px);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .home-about {
+    grid-template-columns: 1fr;
+
+    gap: 70px;
+
+    padding: 90px 30px;
+  }
+
+  .about-image-box {
+    max-width: 700px;
+
+    margin: 0 auto;
+  }
+
+  .about-content {
+    padding-left: 0;
+
+    max-width: 700px;
+
+    margin: auto;
+  }
+
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    max-width: 750px;
+  }
+
+  .why-us {
+    padding: 90px 30px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .home-about {
+    padding: 70px 20px;
+
+    gap: 55px;
+  }
+
+
+  /* ABOUT IMAGE */
+
+  .about-image-box {
+    height: 430px;
+  }
+
+  .about-image-box::before {
+    top: 12px;
+    left: -12px;
+  }
+
+  .experience-circle {
+    width: 125px;
+    height: 125px;
+
+    right: -15px;
+
+    bottom: 25px;
+  }
+
+  .experience-circle strong {
+    font-size: 32px;
+  }
+
+  .experience-circle span {
+    font-size: 9px;
+  }
+
+
+  /* ABOUT */
+
+  .about-content h2 {
+    font-size: 43px;
+  }
+
+  .about-description {
+    font-size: 14px;
+  }
+
+
+  /* STATS */
+
+  .about-stats {
+    gap: 12px;
+
+    margin: 30px 0;
+  }
+
+  .stat-item {
+    padding-left: 10px;
+  }
+
+  .stat-item strong {
+    font-size: 24px;
+  }
+
+  .stat-item span {
+    font-size: 9px;
+
+    line-height: 1.4;
+  }
+
+
+  /* WHY */
+
+  .why-us {
+    padding: 70px 20px;
+  }
+
+  .why-heading {
+    margin-bottom: 45px;
+  }
+
+  .why-heading h2 {
+    font-size: 40px;
+  }
+
+  .why-description {
+    font-size: 14px;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+
+    max-width: 450px;
+  }
+
+
+  /* WHY CARD */
+
+  .why-image {
+    height: 240px;
+  }
+
+  .why-card-content {
+    padding: 0 30px;
+  }
+
+
+  /* CTA */
+
+  .home-cta {
+    min-height: 550px;
+  }
+
+  .cta-content {
+    padding: 70px 20px;
+  }
+
+  .cta-content h2 {
+    font-size: 43px;
+  }
+
+  .cta-description {
+    font-size: 14px;
+  }
+
+  .cta-button {
+    padding: 15px 22px;
+
+    font-size: 12px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .about-content h2 {
+    font-size: 37px;
+  }
+
+  .why-heading h2 {
+    font-size: 35px;
+  }
+
+  .cta-content h2 {
+    font-size: 37px;
+  }
+
+  .about-stats {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+  .stat-item {
+    border-left: none;
+
+    border-bottom: 1px solid #333;
+
+    padding: 0 0 12px;
+  }
+
+}
